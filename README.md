@@ -30,7 +30,9 @@ The image dataset to be used for modeling is the HAM10000.  This dataset can be 
 
 https://www.kaggle.com/datasets/surajghuwalewala/ham1000-segmentation-and-classification
 
-This dataset contains 10,000+ images of skin cancer legions and a associated CSV file with classification labels for each of 7 types of skin cancers:
+This dataset contains 10,000+ images of skin cancer legions and a associated CSV file with classification labels for each of 7 types of skin cancers.  The CSV file uses a binary labelling system (1.0 to indicate type in the respective feature or 0.0 otherwis). 
+
+Types of skin cancer lesions in the dataset:
 
 1. Actinic keratoses and intraepithelial carcinoma / Bowen's disease (AKIEC),
 2. basal cell carcinoma (BCC),
