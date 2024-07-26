@@ -44,7 +44,19 @@ Types of skin cancer lesions in the dataset:
 
 Since these 7 types vary considerably in their perniciousness (for example, melanoma (type 4, MEL) is considerably more dangerous than benign keratosis-like lesions (type 3, BKL)), this further reinforces the significance of proper identification.
 
+## Updates to project
 
+Upon seeing the results of the first neural network model, I realized that there was a =n imbalance in my data...specifically, 67 percent of my data was NV (melanocytic nevi).  This skewed the analysis by primarily choosing NV, which has limited ractival value.
+
+To remedy this, I employed random oversampling to balance the data.
+
+Next, I created a second neural network with more layers to improve performance of the classification which did improve identification of skin lesions.
+
+Additionally, I coded several pretrained models, ResNet50, EfficientNetB0, InceptionV3, VGG16, DenseNet, Xception, and NASNetMobile.
+
+Due to processing time constraints, these models have not yet been run.
+
+Pending the results of the accuracy of the pretrained models, I codes aa algorithm to creates an enseble classification (averaging the predictions of each model and classifying based on consensus) with the aim of improving overall accuracy of claasification.  All models are included in the code, but this may be adjusted pending the statistices of each model.
 
 
 
